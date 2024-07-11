@@ -2,8 +2,8 @@
 import AOS from "aos";
 
 onMounted(() => {
-    AOS.init();
-})
+  AOS.init();
+});
 </script>
 
 <template>
@@ -18,6 +18,8 @@ onMounted(() => {
   </video>
 
   <div class="container mx-auto px-4 h-full">
+    <Navbar />
+    
     <NuxtPage class="h-dvh relative z-20" />
   </div>
 </template>
