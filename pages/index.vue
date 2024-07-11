@@ -1,3 +1,12 @@
+<script setup lang="ts">
+const downloadCV = () => {
+  const link = document.createElement("a");
+  link.href = "/cv.pdf";
+  link.download = "Mateus Lopes CV.pdf";
+  link.click();
+};
+</script>
+
 <template>
   <div class="h-dvh flex flex-col items-center justify-center px-4 ove">
     <span
@@ -32,7 +41,7 @@
       data-aos-duration="2000"
     >
       <Button text="Get in touch" variant="primary" />
-      <Button text="Download CV" variant="outlined" />
+      <Button text="Download CV" variant="outlined" @click="downloadCV" />
     </div>
   </div>
 </template>
