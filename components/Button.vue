@@ -21,7 +21,7 @@ const buttonStyle = computed(() => {
 
 <template>
   <button
-    class="border px-4 py-2 rounded-md font-medium text-xs"
+    class="border px-4 py-2 rounded-md font-medium text-base"
     :class="buttonStyle"
   >
     {{ text }}

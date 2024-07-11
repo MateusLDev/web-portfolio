@@ -14,10 +14,11 @@ export default defineNuxtConfig({
           rel: "stylesheet",
         },
       ],
+      viewport: 'width=device-width, initial-scale=1',
     },
   },
   devtools: { enabled: true },
-  css: ["~/assets/css/main.css"],
+  css: ["~/assets/css/main.css", 'aos/dist/aos.css'],
 
   postcss: {
     plugins: {
