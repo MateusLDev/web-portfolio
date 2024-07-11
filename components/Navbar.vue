@@ -35,7 +35,7 @@ const showMenu = ref(false);
 
 <template>
   <div
-    class="absolute top-4 left-1/2 -translate-x-1/2 flex items-center justify-between bg-white-800 p-4 rounded-full w-full md:w-[600px] z-30"
+    class="fixed top-4 left-0 lg:left-1/2 lg:-translate-x-1/2 flex items-center justify-between bg-white-800 p-4 rounded-full w-full lg:w-[600px] z-30"
   >
     <img src="../assets/logo.png" alt="" />
 
@@ -46,6 +46,13 @@ const showMenu = ref(false);
           showMenu && isMobileDevices,
       }"
     >
+      <Icon
+        icon="material-symbols:close"
+        :height="32"
+        class="absolute right-4 top-6 flex lg:hidden"
+        @click="showMenu = !showMenu"
+      />
+
       <p
         v-for="(item, index) in menuLinks"
         :key="index"
@@ -61,7 +68,7 @@ const showMenu = ref(false);
     </div>
 
     <div class="hidden lg:flex items-center gap-3">
-    <p class="text-sm cursor-pointer font-semibold">EN</p>
+      <p class="text-sm cursor-pointer font-semibold">EN</p>
       <ThemeToggler />
     </div>
 

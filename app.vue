@@ -17,8 +17,8 @@ onMounted(() => {
     <source src="./assets/light-background.mp4" type="video/mp4" />
   </video>
 
-  <div class="container mx-auto px-4 h-full">
     <Navbar />
+  <div class="container mx-auto px-4 h-full">
     
     <NuxtPage class="h-dvh relative z-20" />
   </div>

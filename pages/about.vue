@@ -3,15 +3,29 @@ import { Icon } from "@iconify/vue";
 </script>
 
 <template>
-  <div class="flex flex-col lg:flex-row gap-x-8 items-center justify-center">
-    <div class="blob" data-aos="zoom-in" data-aos-duration="800"></div>
+  <div
+    class="flex flex-col lg:flex-row gap-x-8 items-center justify-center mt-10 md:mt-0"
+  >
+    <div
+      class="blob h-[280px] w-[280px] lg:h-[380px] lg:w-[380px]"
+      data-aos="zoom-in"
+      data-aos-duration="800"
+    ></div>
 
     <div>
-      <h1 class="text-2xl font-bold text-black-800 uppercase mb-4" data-aos="fade-left" data-aos-duration="1000">
+      <h1
+        class="text-2xl font-bold text-black-800 uppercase mb-4"
+        data-aos="fade-left"
+        data-aos-duration="1000"
+      >
         WHO AM I?
       </h1>
 
-      <p class="max-w-[550px] text-black-700" data-aos="fade-left" data-aos-duration="1000">
+      <p
+        class="max-w-[550px] text-black-700 text-sm lg:text-base"
+        data-aos="fade-left"
+        data-aos-duration="1000"
+      >
         I'm Mateus Lopes, a
         <span class="font-semibold">self-taught front-end developer</span> based
         in Brazil with over 5 years' experience developing responsive,
@@ -32,8 +46,11 @@ import { Icon } from "@iconify/vue";
         intuitive digital solutions.
       </p>
 
-      <div class="flex items-center justify-between mt-8" data-aos="fade-up"
-      data-aos-duration="1800">
+      <div
+        class="flex items-center justify-between mt-8"
+        data-aos="fade-up"
+        data-aos-duration="1800"
+      >
         <Icon icon="logos:vue" :height="32" />
         <Icon icon="devicon:react" :height="32" />
         <Icon icon="devicon:typescript" :height="32" />
