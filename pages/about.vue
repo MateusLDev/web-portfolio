@@ -1,5 +1,10 @@
 <script setup lang="ts">
 import { Icon } from "@iconify/vue";
+
+useSeoMeta({
+  title: "Mateus Lopes | About me",
+  ogTitle: "Mateus Lopes | About me"
+});
 </script>
 
 <template>

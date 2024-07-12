@@ -6,6 +6,17 @@ import AOS from "aos";
 const colorMode = useColorMode();
 const updateKey = ref(0);
 
+useSeoMeta({
+  title: "Mateus Lopes | Front-end Developer",
+  ogTitle: "Mateus Lopes | Front-end Developer",
+  description:
+    "a Self-taught front-end developer based in Brazil with over 5 years experience developing responsive, high-performance web pages and systems",
+  ogDescription:
+    "a Self-taught front-end developer based in Brazil with over 5 years experience developing responsive, high-performance web pages and systems",
+  ogImage: "https://example.com/image.png",
+  twitterCard: "summary_large_image",
+});
+
 const backgroundVideoByTheme = computed(() => {
   updateKey.value++;
   return colorMode.preference === "dark" ? DarkBackground : LightBackground;
