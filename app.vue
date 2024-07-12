@@ -22,11 +22,10 @@ onMounted(() => {
     autoplay
     muted
     loop
-    controls
     webkit-playsinline
     playsinline
     id="myVideo"
-    class="absolute right-0 top-0 w-full h-dvh opacity-[0.04] object-cover"
+    class="absolute right-0 top-0 w-full h-dvh opacity-[0.04] object-cover pointer-events-none"
   >
     <source :src="backgroundVideoByTheme" type="video/mp4" />
   </video>
