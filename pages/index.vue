@@ -10,14 +10,14 @@ const downloadCV = () => {
 <template>
   <div class="h-dvh flex flex-col items-center justify-center px-4 ove">
     <span
-      class="text-black-700 text-base md:text-xl font-medium"
+      class="text-subtitle text-base md:text-xl font-medium"
       data-aos="fade-up"
       data-aos-duration="1000"
       >Hi, I’m Mavue 💪</span
     >
 
     <h1
-      class="text-black-800 text-5xl font-bold text-center uppercase mt-2 mb-4"
+      class="text-title text-5xl font-bold text-center uppercase mt-2 mb-4"
       data-aos="fade-up"
       data-aos-duration="1300"
     >
@@ -25,7 +25,7 @@ const downloadCV = () => {
     </h1>
 
     <p
-      class="text-black-600 text-sm md:text-base text-center"
+      class="text-description text-sm md:text-base text-center"
       data-aos="fade-up"
       data-aos-duration="1800"
     >

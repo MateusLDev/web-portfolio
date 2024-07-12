@@ -35,14 +35,14 @@ const showMenu = ref(false);
 
 <template>
   <div
-    class="fixed top-4 left-0 lg:left-1/2 lg:-translate-x-1/2 flex items-center justify-between bg-white-800 p-4 rounded-full w-full lg:w-[600px] z-30"
+    class="fixed top-4 left-0 lg:left-1/2 lg:-translate-x-1/2 flex items-center justify-between bg-background p-4 rounded-full w-full lg:w-[600px] z-30"
   >
     <img src="../assets/logo.png" alt="" />
 
     <div
       class="hidden lg:flex gap-4"
       :class="{
-        'absolute -top-4 left-0 h-dvh w-full !flex flex-col items-center justify-center bg-white-800 z-30':
+        'absolute -top-4 left-0 h-dvh w-full !flex flex-col items-center justify-center bg-background z-30':
           showMenu && isMobileDevices,
       }"
     >
@@ -56,7 +56,7 @@ const showMenu = ref(false);
       <p
         v-for="(item, index) in menuLinks"
         :key="index"
-        class="lg:text-sm cursor-pointer"
+        class="lg:text-sm cursor-pointer text-title"
         :class="{
           'font-semibold': route.currentRoute.value.name === item.name,
           'text-2xl': showMenu,
@@ -68,7 +68,7 @@ const showMenu = ref(false);
     </div>
 
     <div class="hidden lg:flex items-center gap-3">
-      <p class="text-sm cursor-pointer font-semibold">EN</p>
+      <p class="text-sm cursor-pointer text-title font-semibold">EN</p>
       <ThemeToggler />
     </div>
 

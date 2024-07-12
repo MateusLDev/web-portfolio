@@ -14,7 +14,7 @@ import { Icon } from "@iconify/vue";
 
     <div>
       <h1
-        class="text-2xl font-bold text-black-800 uppercase mb-4"
+        class="text-2xl font-bold text-title uppercase mb-4"
         data-aos="fade-left"
         data-aos-duration="1000"
       >
@@ -22,7 +22,7 @@ import { Icon } from "@iconify/vue";
       </h1>
 
       <p
-        class="max-w-[550px] text-black-700 text-sm lg:text-base"
+        class="max-w-[550px] text-description text-sm lg:text-base"
         data-aos="fade-left"
         data-aos-duration="1000"
       >
