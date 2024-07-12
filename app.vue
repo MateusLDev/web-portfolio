@@ -23,7 +23,7 @@ onMounted(() => {
     muted
     loop
     id="myVideo"
-    class="absolute right-0 bottom-0 w-full opacity-[0.04] object-cover"
+    class="absolute right-0 top-0 w-full h-dvh opacity-[0.04] object-cover"
   >
     <source :src="backgroundVideoByTheme" type="video/mp4" />
   </video>

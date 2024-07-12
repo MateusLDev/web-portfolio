@@ -49,7 +49,7 @@ const showMenu = ref(false);
       <Icon
         icon="material-symbols:close"
         :height="32"
-        class="absolute right-4 top-6 flex lg:hidden"
+        class="absolute right-4 top-6 flex lg:hidden text-title"
         @click="showMenu = !showMenu"
       />
 
@@ -65,6 +65,11 @@ const showMenu = ref(false);
       >
         {{ item.text }}
       </p>
+
+      <div class="flex lg:hidden items-center gap-4 mt-8">
+        <p class="text-title text-xl">Theme</p>
+        <ThemeToggler />
+      </div>
     </div>
 
     <div class="hidden lg:flex items-center gap-3">
@@ -75,7 +80,7 @@ const showMenu = ref(false);
     <Icon
       icon="material-symbols:menu"
       :height="24"
-      class="flex lg:hidden"
+      class="flex lg:hidden text-title"
       @click="showMenu = !showMenu"
     />
   </div>
