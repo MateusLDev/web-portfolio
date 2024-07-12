@@ -1,10 +1,9 @@
 <script setup lang="ts">
-type ButtonVariantType = "primary" | "outlined" | "outlinded dark";
+type ButtonVariantType = "primary" | "outlined";
 
 enum buttonColors {
-  primary = "border-primary bg-primary text-white-900",
-  outlined = "border-primary bg-white-900 text-primary",
-  "outlinded dark" = "border-white-900 bg-black-800 text-white-900",
+  primary = "border-primary bg-primary text-primary-foreground",
+  outlined = "border-border bg-background text-border",
 }
 
 interface ButtonPropsInterface {
